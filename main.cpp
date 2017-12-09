@@ -121,22 +121,16 @@ public:
 		}
 	}
 
-	void checkCollisionWithMap(float Dx, float Dy){
-		for (int i = 0; i < obj.size(); ++i){//проходимся по объектам карты
-			if(getRect().intersects(obj[i].rect)){//если столкнулись прямоугольник врага с интериером 
-				if(Dy > 0){
-					y = obj[i].rect.top - h; dy = 0; onGround = true;
-				}
-				if(Dy < 0){
-					y = obj[i].rect.top + obj[i].rect.height; dy = 0;
-				}
-				if(Dx > 0){
-					x = obj[i].rect.top - w; dx = -0,1; sprite.scale(-1,1);
-				}
-				if(Dx < 0){
-					x = obj.rect.left + obj[i].rect.width; dx = 0.1; sprite.scale(-1.1);
-				}
-			}			
+	void checkCollisionWithMap(float Dx, float Dy)
+	{
+
+		for (int i = 0; i<obj.size(); i++)//проходимся по объектам
+		if (getRect().intersects(obj[i].rect))//проверяем пересечение игрока с объектом
+		{
+				if (Dy>0)	{ y = obj[i].rect.top - h;  dy = 0; onGround = true; }
+				if (Dy<0)	{ y = obj[i].rect.top + obj[i].rect.height;   dy = 0; }
+				if (Dx>0)	{ x = obj[i].rect.left - w;  dx = -0.1; sprite.scale(-1, 1); }
+				if (Dx<0)	{ x = obj[i].rect.left + obj[i].rect.width; dx = 0.1; sprite.scale(-1, 1); }
 		}
 	}
 	void update(float time){
@@ -152,22 +146,17 @@ public:
 };
 
 int main(void){
-<<<<<<< HEAD
+
 	RenderWindow window(VideoMode(800, 600), "title");
 	view.reset(FloatRect(0, 0, 640, 480));
 
-	View view;
 	// menu(); //вызов метода с меню
 	Level lvl;
 	lvl.LoadFromFile("map.tmx");
-=======
-	View view;
-	// menu(); //вызов метода с меню
-	Level lvl;
-	lvl.LoadFromFile("map.tmx");
-	RenderWindow window(VideoMode(800, 600), "title");
-	// view.reset(FloatRect(0, 0, 640, 480));
->>>>>>> 413a61f39e1112e2c8163968b192b9574d937368
+
+	// View view;
+
+
 
 	Image heroImage;
 	heroImage.loadFromFile("images/npc/player.png");
@@ -211,8 +200,5 @@ int main(void){
 	// 			cout << ";;" << endl;
 	// 		}
 	// 	}			
-<<<<<<< HEAD
 	// }
-=======
 	// }
->>>>>>> 413a61f39e1112e2c8163968b192b9574d937368

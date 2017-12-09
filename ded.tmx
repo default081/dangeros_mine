@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="120" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="platformertiles" tilewidth="32" tileheight="32">
+  <image source="images/platformertiles.png" width="256" height="96"/>
+ </tileset>
+ <layer name="Слой тайлов 1" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0bENADAIA0Fq9h84K9CQBHQnubf0EQAAAECXfH2AVvrupu9clXb6zqXvbtV2GvfLz8d9WgAAAAAAAMBMB4tHAic=
+  </data>
+ </layer>
+ <layer name="Слой тайлов 2" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <objectgroup name="Слой объектов 1" width="120" height="30">
+  <object name="solid" x="2" y="448" width="1273" height="50"/>
+  <object name="solid" x="669" y="357" width="37" height="89"/>
+  <object name="solid" x="962" y="258" width="61" height="191"/>
+  <object name="Player1" x="490" y="383" width="55" height="62"/>
+ </objectgroup>
+</map>
