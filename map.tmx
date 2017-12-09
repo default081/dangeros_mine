@@ -358,6 +358,67 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+<<<<<<< HEAD
+=======
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+>>>>>>> 413a61f39e1112e2c8163968b192b9574d937368
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1363,6 +1424,9 @@
   <object name="solid" x="610" y="515" width="28" height="93"/>
   <object name="Player1" x="456" y="510" width="67" height="64"/>
   <object name="ded" x="768" y="572" width="31" height="35"/>
+<<<<<<< HEAD
   <object name="EasyEnemy" x="853" y="537" width="65" height="62"/>
+=======
+>>>>>>> 413a61f39e1112e2c8163968b192b9574d937368
  </objectgroup>
 </map>

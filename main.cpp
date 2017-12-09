@@ -152,6 +152,7 @@ public:
 };
 
 int main(void){
+<<<<<<< HEAD
 	RenderWindow window(VideoMode(800, 600), "title");
 	view.reset(FloatRect(0, 0, 640, 480));
 
@@ -159,6 +160,14 @@ int main(void){
 	// menu(); //вызов метода с меню
 	Level lvl;
 	lvl.LoadFromFile("map.tmx");
+=======
+	View view;
+	// menu(); //вызов метода с меню
+	Level lvl;
+	lvl.LoadFromFile("map.tmx");
+	RenderWindow window(VideoMode(800, 600), "title");
+	// view.reset(FloatRect(0, 0, 640, 480));
+>>>>>>> 413a61f39e1112e2c8163968b192b9574d937368
 
 	Image heroImage;
 	heroImage.loadFromFile("images/npc/player.png");
@@ -202,4 +211,8 @@ int main(void){
 	// 			cout << ";;" << endl;
 	// 		}
 	// 	}			
+<<<<<<< HEAD
 	// }
+=======
+	// }
+>>>>>>> 413a61f39e1112e2c8163968b192b9574d937368
