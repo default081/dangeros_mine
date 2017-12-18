@@ -44,7 +44,7 @@ public:
 		playerScore = 0; state = stay;
 		obj = lev.GetAllObjects();//вектор obj содержит все обьекты на карте
 		if(name == "Player1"){//если имя персонажа равно Player1
-			sprite.setTextureRect(IntRect(4, 19, w, h));//то загружаем спрайт персонажа
+			sprite.setTextureRect(IntRect(15, 14, w, h));//то загружаем спрайт персонажа
 		}
 	}
 	void control(){
@@ -147,21 +147,18 @@ public:
 
 int main(void){
 
-	RenderWindow window(VideoMode(800, 600), "title");
+	RenderWindow window(VideoMode(800, 600), "witcher");
 	view.reset(FloatRect(0, 0, 640, 480));
 
 	// menu(); //вызов метода с меню
 	Level lvl;
 	lvl.LoadFromFile("map.tmx");
 
-	// View view;
-
-
 
 	Image heroImage;
 	heroImage.loadFromFile("images/npc/player.png");
 	Object player=lvl.GetObject("Player1");
-	Player p(heroImage, "Player1", lvl, player.rect.left, player.rect.top, 40, 30);
+	Player p(heroImage, "Player1", lvl, player.rect.left, player.rect.top, 35, 45);
 	
 	Clock clock;
 
